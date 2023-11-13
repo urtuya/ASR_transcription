@@ -23,7 +23,7 @@ CONVERTED = os.path.join(TEMP_DIR, "converted.wav")
 AUDIO_CLEANED = os.path.join(TEMP_DIR, "htdemucs/converted", "vocals.wav")
 AUDIO_RTTM = os.path.join(TEMP_DIR, "audio.rttm")
 
-MODEL_NAME = "medium"
+MODEL_NAME = "small"
 
 
 def save_diarization_results(data, filename:str, audio_name:str):
