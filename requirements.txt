@@ -6,3 +6,4 @@ speechbrain>=0.5.11
 torchaudio>=0.10.1
 faster-whisper>=0.7.1
 simple-diarizer
+streamlit_ext
