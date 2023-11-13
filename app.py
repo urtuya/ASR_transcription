@@ -192,6 +192,8 @@ def start_asr(path_to_files:list,
 
 def clear_temp_folder():
 
+    if not os.path.exists(TEMP_DIR):
+        os.mkdir(TEMP_DIR)
 
     try:
         for root, _, files in os.walk(TEMP_DIR):
@@ -345,6 +347,5 @@ if __name__ == "__main__":
             st.dataframe(result_df_list[i].head(5))
 
         create_zip()
-        clear_temp_folder()
 
 
